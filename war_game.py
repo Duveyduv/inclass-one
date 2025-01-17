@@ -158,7 +158,6 @@ class War_Game:
         cards = []
         for player in self.players:
             cards.append(player.play_card())
-
         winner = cards.index(min(cards))
         self.players[winner].add_card_discard(cards)
 
