@@ -236,7 +236,7 @@ class War_Player:
 
     def shuffle_discard(self):
         # Shuffle discard and then add to Hand, while removing from discard
-        for i in range(7):
+        for i in range(64):
             random.shuffle(self.discard)
         while(len(self.discard) > 0):
             self.add_card_hand(self.discard.pop())
